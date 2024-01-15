@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>-->
+<!--<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.demo2.Login"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>-->
+
+<AnchorPane fx:id="scene2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.Controller">
+        <Label layoutX="332.0" layoutY="251.0" text="Email">
+      <font>
+         <Font name="Gill Sans MT" size="12.0" />
+      </font></Label>
+        <TextField fx:id="username" layoutX="402.0" layoutY="247.0" />
+        <Label layoutX="320.0" layoutY="297.0" prefWidth="52.0" text="Password">
+      <font>
+         <Font name="Gill Sans MT" size="12.0" />
+      </font></Label>
+        <PasswordField fx:id="password" layoutX="402.0" layoutY="293.0" />
+        <Button fx:id="submit_button" layoutX="377.0" layoutY="334.0" mnemonicParsing="false" onAction="#getData" text="Submit" />
+        <Button fx:id="goBack" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchToScene" text="Go Back" />
+   <Label layoutX="332.0" layoutY="99.0" prefHeight="62.0" prefWidth="227.0" text="Log in with your email and password">
+      <font>
+         <Font name="Gill Sans MT" size="14.0" />
+      </font>
+   </Label>
+   <ImageView fx:id="img2" fitHeight="465.0" fitWidth="286.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@img2.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="icon" fitHeight="26.0" fitWidth="26.0" layoutX="559.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@bee_2.jpg" />
+      </image>
+   </ImageView>
+   <Label layoutX="512.0" layoutY="12.0" prefHeight="26.0" prefWidth="60.0" text="BeeTravel">
+      <font>
+         <Font name="Freestyle Script" size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>

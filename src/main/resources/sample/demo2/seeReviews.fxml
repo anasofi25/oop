@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.demo2.SeeReviews"
+            prefHeight="200.0" prefWidth="400.0">
+    <TableView fx:id="reviewsTableView" prefHeight="214.0" prefWidth="414.0">
+        <columns>
+            <TableColumn fx:id="reviewIdColumn" prefWidth="75.0" text="Review ID" />
+            <TableColumn fx:id="userIdColumn" prefWidth="75.0" text="User ID" />
+            <TableColumn fx:id="reviewTextColumn" prefWidth="250.0" text="Review Text" />
+            <!-- Add more columns as needed -->
+        </columns>
+    </TableView>
+</AnchorPane>

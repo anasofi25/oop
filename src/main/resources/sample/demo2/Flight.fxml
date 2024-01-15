@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="flight" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.FlightController">
+<VBox layoutX="292.0" layoutY="98.0" spacing="10">
+<!--<HBox>
+   <Text text="Booking ID:" />
+   <Label fx:id="bookingIdLabel" text="" />
+</HBox>-->
+<HBox>
+    <Text text="Airline: " />
+    <Label fx:id="airlineLabel" text="" />
+</HBox>
+<HBox>
+    <Text text="Departure Airport: " />
+    <Label fx:id="departureAirportLabel" text="" />
+</HBox>
+<HBox>
+    <Text text="Arrival Airport: " />
+    <Label fx:id="arrivalAirportLabel" text="" />
+</HBox>
+<HBox>
+    <Text text="Departure date: " />
+    <Label fx:id="departureDateTimeLabel" text="" />
+</HBox>
+<HBox>
+    <Text text="Arrival date: " />
+    <Label fx:id="arrivalDateTimeLabel" text="" />
+</HBox>
+<HBox>
+    <Text text="Price for round trip: " />
+    <Label fx:id="priceLabel" text="" />
+</HBox>
+</VBox>
+   <Button layoutX="515.0" layoutY="360.0" mnemonicParsing="false" text="Go Back" onAction="#switchToScene" />
+   <Button layoutX="408.0" layoutY="334.0" mnemonicParsing="false" text="Button" />
+   <Label layoutX="317.0" layoutY="28.0" text="For your destinations and the specified dates,&#10;we have found this flight. &#10;" textAlignment="CENTER">
+      <font>
+         <Font name="Gill Sans MT" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="283.0" layoutY="271.0" text="Our agency only handles hotel booking,&#10;so please click the button in order to&#10;purchase the flight directly from the airline's website " textAlignment="CENTER">
+      <font>
+         <Font name="Gill Sans MT" size="14.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="400.0" fitWidth="250.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" fx:id="flight1">
+      <image>
+         <Image url="@flight.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>

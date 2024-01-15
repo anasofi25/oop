@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regscene" prefHeight="416.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.RegisterController">
+   <children>
+      <Label layoutX="347.0" layoutY="82.0" text="Email:" />
+      <TextField fx:id="usernameField" layoutX="426.0" layoutY="78.0" />
+
+      <Label layoutX="347.0" layoutY="124.0" text="Password:" />
+      <PasswordField fx:id="passwordField" layoutX="426.0" layoutY="120.0" />
+
+      <Label layoutX="316.0" layoutY="171.0" text="Confirm Password:" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="426.0" layoutY="167.0" />
+
+      <Label layoutX="365.0" layoutY="211.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="426.0" layoutY="207.0" />
+
+      <Label layoutX="361.0" layoutY="251.0" text="Gender:" />
+      <ComboBox fx:id="genderComboBox" layoutX="459.0" layoutY="247.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Male" />
+               <String fx:value="Female" />
+               <String fx:value="Other" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+      <Label layoutX="326.0" layoutY="298.0" text="Date of Birth:" />
+      <DatePicker fx:id="dobDatePicker" layoutX="403.0" layoutY="294.0" />
+
+      <Button fx:id="regButton" layoutX="396.0" layoutY="347.0" onAction="#handleRegistration" text="Register" />
+      <Button layoutX="491.0" layoutY="347.0" mnemonicParsing="false" onAction="#getData5" text="Go Back" />
+      <ImageView fx:id="reg1" fitHeight="236.0" fitWidth="142.0" layoutX="167.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reg_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reg2" fitHeight="189.0" fitWidth="143.0" layoutX="159.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reg_2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reg3" fitHeight="216.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reg_3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reg4" fitHeight="212.0" fitWidth="159.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reg_4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="431.0" layoutY="43.0" text="Register">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

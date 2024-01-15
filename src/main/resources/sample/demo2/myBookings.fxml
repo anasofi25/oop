@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.MyBookingsController">
+   <children>
+      <Label layoutX="308.0" layoutY="44.0" text="These are the bookings you have made so far:">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="231.0" layoutY="78.0" prefHeight="171.0" prefWidth="395.0">
+        <columns>
+            <TableColumn fx:id="countryColumn" prefWidth="67.20001220703125" text="Country" />
+            <TableColumn fx:id="cityColumn" prefWidth="56.0" text="City" />
+            <TableColumn fx:id="hotelColumn" prefWidth="78.4000244140625" text="Hotel" />
+            <TableColumn fx:id="toColumn" prefWidth="69.5999755859375" text="From" />
+            <TableColumn fx:id="fromColumn" prefWidth="61.5999755859375" text="To" />
+            <TableColumn fx:id="priceColumn" prefWidth="57.5999755859375" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="230.0" layoutY="261.0" text="In order to leave a review, &#10;select the booking and &#10;click on the button below" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="review" layoutX="272.0" layoutY="309.0" mnemonicParsing="false" onAction="#writeReview" text="Review" />
+      <Button fx:id="goBack" layoutX="239.0" layoutY="22.0" mnemonicParsing="false" onAction="#getData" text="Go Back" />
+      <Button fx:id="seeReviews" layoutX="469.0" layoutY="309.0" mnemonicParsing="false" onAction="#seeReviewsButtonClicked" text="SeeReviews" />
+      <Label layoutX="420.0" layoutY="261.0" text="In order to see reviews &#10;made by other users, &#10;select a booking and click here&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="icon" fitHeight="404.0" fitWidth="251.0" layoutX="-7.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancelButton" layoutX="359.0" layoutY="357.0" mnemonicParsing="false" text="Cancel Booking" />
+   </children>
+</AnchorPane>

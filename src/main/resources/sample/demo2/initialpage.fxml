@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="init" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.InitialPage">
+   <children>
+      <Button fx:id="backToLogin" layoutX="25.0" layoutY="244.0" mnemonicParsing="false" onAction="#getData_1" text="Back to login" />
+      <Button fx:id="startNew" layoutX="76.0" layoutY="96.0" mnemonicParsing="false" onAction="#getData" text="Start new booking" />
+      <Button fx:id="account" layoutX="38.0" layoutY="283.0" mnemonicParsing="false" onAction="#getData_2" text="Account" />
+      <Label layoutX="26.0" layoutY="69.0" text="Click here to see our available offers:">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="myBookings" layoutX="26.0" layoutY="200.0" mnemonicParsing="false" text="My Bookings" onAction="#getData_3" />
+      <ImageView fx:id="page" fitHeight="400.0" fitWidth="213.0" layoutX="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@page.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
