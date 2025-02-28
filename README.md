@@ -8,7 +8,6 @@ Voyage is a Travel Booking application that enables users to make hotel reservat
 2. [Features](#features)
 3. [Account Management](#account-management)
     - [Register and Login](#register-and-login![log_in](https://github.com/user-attachments/assets/aa50b635-510c-4a3a-bede-6035cf1078b4)
-)
     - [Account Details](#account-details)
     - [My Bookings](#my-bookings)![my_nookings](https://github.com/user-attachments/assets/dbb499ee-6825-4dfa-ad4c-96775b204249)
 
@@ -16,7 +15,8 @@ Voyage is a Travel Booking application that enables users to make hotel reservat
     - [Explore Destinations](#explore-destinations)![dest](https://github.com/user-attachments/assets/117c2630-482a-450a-a6a9-c496fa772724)
 
     - [Select Dates and Hotels](#select-dates-and-hotels)
-    - [Review and Cancel Bookings](#review-and-cancel-bookings)![Uploading final.png…]()
+    - [Review and Cancel Bookings](#review-and-cancel-bookings)![final](https://github.com/user-attachments/assets/60631c6d-5466-43ed-964c-4f31bf8c5f16)
+
 
 5. [To-Do](#to-do)
 
